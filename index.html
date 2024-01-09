@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form-Odev</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="https://formsubmit.co/enesozsaracc@gmail.com" method="POST">
+      <div class="wrapper">
+        <div>
+          <label for="first_name">İsim</label>
+          <input
+            type="text"
+            id="first_name"
+            name="first_name"
+            placeholder="İsim"
+            minlength="3"
+            maxlength="20"
+            required
+          />
+        </div>
+        <br />
+        <div>
+          <label for="last_name">Soyisim</label>
+          <input
+            type="text"
+            id="last_name"
+            name="last_name"
+            placeholder="Soyisim"
+            minlength="3"
+            maxlength="30"
+            required
+          />
+        </div>
+        <br />
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email" required />
+        </div>
+        <br />
+        <div>
+          <label for="age">Yaşınız</label>
+          <input type="number" id="age" name="age" min="15" max="70" placeholder="Yaşınız" required />
+        </div>
+        <br />
+        <div>
+          <label for="massage">Mesajınız</label>
+          <textarea name="massage" id="massage" rows="4" placeholder="Mesajınız"></textarea>
+        </div>
+        <br />
+        <div>
+          <label for="rating">Sitemizi ne kadar beğendiniz?</label>
+          <input type="range" name="rating" id="rating" />
+        </div>
+        <br>
+        <div class="btns">
+            <button class="btn-grad" type="reset">Temizle</button>
+            <button class="btn-grad" type="submit">Gönder</button>
+        </div>
+      </div>
+    </form>
+
+
+    <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value;
+        
+        slider.oninput = function() {
+          output.innerHTML = this.value;
+        }
+        </script>
+  </body>
+</html>

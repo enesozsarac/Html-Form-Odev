@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: aliceblue;
+  background: linear-gradient(
+    90deg,
+    hsla(213, 77%, 14%, 1) 0%,
+    hsla(202, 27%, 45%, 1) 100%
+  );
+}
+
+.wrapper {
+  border: 2px solid aliceblue;
+  border-radius: 30px;
+  padding: 20px 40px;
+  width: 450px;
+}
+
+input {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 1rem;
+  border-radius: 30px;
+  display: flex;
+  outline: none;
+  border: none;
+  padding: 1rem;
+}
+
+#massage {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 1rem;
+  border-radius: 30px;
+  display: flex;
+  outline: none;
+  border: none;
+  padding: 1rem;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    rgb(84, 123, 146) 0%,
+    hsla(213, 77%, 14%, 1) 100%
+  );
+  margin: 10px;
+  padding: 15px 25px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 30px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+input[type="range"] {
+  accent-color: rgb(127, 187, 222);
+}
